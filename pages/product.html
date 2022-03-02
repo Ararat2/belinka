@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../js/slick/slick.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <script src="../js/tailwind.js"></script>
+        <title>
+            Интернет-магазин красок для дерева «Belinka». Купить лакокрасочные материалы Белинка на официальном сайте по
+            доступным ценам в Москве.
+        </title>
+    </head>
+    <body>
+        <nav class="bg-light flex justify-center">
+            <div class="text-xs d-flex flex font-medium justify-between items-center w-full max-w-6xl">
+                <div class="md:hidden flex gap-4 pl-6">
+                    <button id="menu-btn" class="font-bold text-2xl text-primary hover:text-secondary">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <button id="search-btn" class="font-bold text-2xl text-primary hover:text-secondary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <div id="mobile-menu" class="hidden bg-black/50 fixed top-11 w-full h-full z-[9999]">
+                    <ul class="bg-white inline-block ml-4 rounded-b">
+                        <li class="hover:bg-primary hover:text-white px-4 py-3 uppercase text-md">
+                            <a href="#">каталог</a>
+                        </li>
+                        <li class="hover:bg-primary hover:text-white px-4 py-3 uppercase text-md">
+                            <a href="#">оплата и доставка</a>
+                        </li>
+                        <li class="hover:bg-primary hover:text-white px-4 py-3 uppercase text-md">
+                            <a href="#">акции</a>
+                        </li>
+                        <li class="hover:bg-primary hover:text-white px-4 py-3 uppercase text-md">
+                            <a href="#">личный кабинет</a>
+                        </li>
+                        <li class="hover:bg-primary hover:text-white px-4 py-3 uppercase text-md">
+                            <a href="#">основной сайт</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="search-content" class="hidden bg-black/50 fixed top-11 w-full h-full z-[9999]">
+                    <div
+                        class="text-sm inline-flex justify-between bg-white w-1/2 ml-4 mx-auto my-2 border hover:border-gray-300 rounded-md overflow-hidden"
+                    >
+                        <input type="text" placeholder="Поиск" class="px-3 py-2 outline-none" />
+
+                        <button class="px-2 text-gray-400">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <ul class="uppercase hidden md:flex items-center">
+                    <li class="px-2 py-3 bg-primary text-white hover:bg-primary hover:text-white cursor-pointer">
+                        <a href="#">каталог</a>
+                    </li>
+                    <li class="px-2 py-3 hover:bg-primary hover:text-white cursor-pointer">
+                        <a href="#">оплата и доставка</a>
+                    </li>
+                    <li class="px-2 py-3 hover:bg-primary hover:text-white cursor-pointer">
+                        <a href="#">акции</a>
+                    </li>
+                    <li class="px-2 py-3 hover:bg-primary hover:text-white cursor-pointer">
+                        <a href="#">личный кабинет</a>
+                    </li>
+                    <li class="px-2 py-3 hover:bg-primary hover:text-white cursor-pointer">
+                        <a href="#">отзывы</a>
+                    </li>
+                    <li class="px-2 py-3 hover:bg-primary hover:text-white cursor-pointer">
+                        <a href="#">основной сайт</a>
+                    </li>
+                </ul>
+
+                <div class="flex gap-px text-xs">
+                    <button class="px-3 py-2 text-white bg-primary hover:bg-secondary flex gap-1 items-center">
+                        <i class="fal fa-shopping-cart font-medium text-lg inline-block mr-2"></i>
+
+                        <span> <span class="font-medium text-sm">0</span> товаров </span>
+
+                        <span class="font-medium"> <span class="text-sm">0</span> р. </span>
+                    </button>
+
+                    <button class="font-medium px-3 py-2 text-xs text-white bg-primary hover:bg-secondary">
+                        Корзина
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <header class="mx-auto w-full max-w-6xl pt-4 mb-6 flex items-center justify-evenly md:justify-between">
+            <a href="#">
+                <img src="../assets/images/logo.png" alt="logo" />
+            </a>
+
+            <a href="tel:+74952121217" class="text-xl"> +7 (495) 21-21-21-7 </a>
+
+            <div class="text-sm hidden md:block border hover:border-gray-300 rounded-md overflow-hidden">
+                <input type="text" placeholder="Поиск" class="px-3 py-2 outline-none" />
+
+                <button class="px-2 text-gray-400">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="mx-auto w-full max-w-6xl uppercase text-sm border-b border-gray-200 md:mx-auto px-6 md:px-0 pb-2">
+            <a href="#" class="text-gray-500 hover:text-gray-700" #>Главная</a>
+            &raquo;
+            <a href="#" class="text-gray-500 hover:text-gray-700">Каталог</a>
+            &raquo;
+            <a href="#" class="text-gray-500 hover:text-gray-700">Лазурные деревозащитные покрытия</a>
+            &raquo;
+            <a href="#">belinka toplasur</a>
+        </div>
+
+        <main class="mx-auto w-full max-w-6xl flex flex-col md:flex-row items-start gap-6 pt-2">
+            <div class="w-full">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="w-full md:w-2/5 border flex justify-center items-center p-14">
+                        <img src="../assets/images/product-page.jpg" alt="product" />
+                    </div>
+
+                    <div class="w-full md:w-3/5 p-2 flex flex-col gap-6">
+                        <h2 class="font-semibold text-2xl">Belinka Toplasur Декоративное лазурное покрытие</h2>
+
+                        <p class="text-sm">
+                            Декоративное толстослойное высокоэффективное лазурное покрытие с натуральным воском,
+                            сохраняющее видимой натуральную структуру древесины, для долговременной защиты древесины от
+                            атмосферных воздействий и солнечных лучей, для наружных и внутренних работ.
+                        </p>
+
+                        <div class="flex flex-col gap-2">
+                            <h3 class="font-semibold">Введите площадь поверхности нанесения</h3>
+
+                            <div class="text-sm hidden md:block rounded-md overflow-hidden">
+                                <input type="text" placeholder="Поиск" class="px-3 py-2 border outline-none" />
+
+                                <button class="font-medium px-3 h-full bg-primary hover:bg-secondary text-white -ml-1">
+                                    Рассчитать
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <h3 class="font-semibold">Или выберите объём сами:</h3>
+
+                            <div class="flex gap-6">
+                                <label class="flex items-center cursor-pointer">
+                                    <input
+                                        type="checkbox"
+                                        class="styled-input w-4 h-4 rounded-md border-0 focus:ring-0 text-green-600"
+                                        checked
+                                    />
+                                    <span class="ml-2 text-gray-500">1 л</span>
+                                </label>
+
+                                <label class="flex items-center cursor-pointer">
+                                    <input
+                                        type="checkbox"
+                                        class="styled-input w-4 h-4 rounded-md border-0 focus:ring-0 text-green-600"
+                                        checked
+                                    />
+                                    <span class="ml-2 text-gray-500">2 л</span>
+                                </label>
+
+                                <label class="flex items-center cursor-pointer">
+                                    <input
+                                        type="checkbox"
+                                        class="styled-input w-4 h-4 rounded-md border-0 focus:ring-0 text-green-600"
+                                        checked
+                                    />
+                                    <span class="ml-2 text-gray-500">3 л</span>
+                                </label>
+
+                                <label class="flex items-center cursor-pointer">
+                                    <input
+                                        type="checkbox"
+                                        class="styled-input w-4 h-4 rounded-md border-0 focus:ring-0 text-green-600"
+                                        checked
+                                    />
+                                    <span class="ml-2 text-gray-500">4 л</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <h3 class="font-semibold">Выберите цвет:</h3>
+
+                            <div class="flex flex-wrap gap-12">
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-blue-400"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-red-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-blue-400"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-red-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                                <div class="w-8 h-8 cursor-pointer rounded border bg-yellow-500"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center gap-4">
+                                <p class="font-semibold text-sm">Цена:</p>
+
+                                <p class="font-bold text-2xl">от 1 010 р.</p>
+                            </div>
+
+                            <p class="text-xs text-gray-500">Цена за 1 кв.м от 105 р.</p>
+                        </div>
+
+                        <div class="flex gap-5">
+                            <div class="border border-gray-300 rounded px-3 py-1 flex gap-2">
+                                <button class="text-gray-500 hover:text-gray-600">
+                                    <i class="fas fa-caret-left"></i>
+                                </button>
+
+                                <span class="text-lg">4</span>
+
+                                <button class="text-gray-500 hover:text-gray-600">
+                                    <i class="fas fa-caret-right"></i>
+                                </button>
+                            </div>
+
+                            <button class="bg-secondary hover:bg-primary px-6 py-1 rounded text-white font-medium">
+                                В Корзину
+                            </button>
+
+                            <label class="flex items-center cursor-pointer">
+                                <input
+                                    type="checkbox"
+                                    class="styled-input w-4 h-4 rounded-md border-0 focus:ring-0 text-green-600"
+                                    checked
+                                />
+                                <span class="ml-2 text-gray-800 font-medium">Сравнить товар</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-6">
+                    <div class="flex border-b border-gray-300 mb-3">
+                        <button
+                            class="text-sm md:text-md pruduct-tab-btn px-1 md:px-4 font-semibold py-2 md:py-3 w-full text-gray-400 hover:text-black border-box text-black border-b-2 border-secondary"
+                        >
+                            Характеристики
+                        </button>
+                        <button
+                            class="text-sm md:text-md pruduct-tab-btn px-2 md:px-4 font-semibold py-2 md:py-3 w-full text-gray-400 hover:text-black border-box"
+                        >
+                            Описание
+                        </button>
+                        <button
+                            class="text-sm md:text-md pruduct-tab-btn px-2 md:px-4 font-semibold py-2 md:py-3 w-full text-gray-400 hover:text-black border-box"
+                        >
+                            Способ применения
+                        </button>
+                        <button
+                            class="text-sm md:text-md pruduct-tab-btn px-2 md:px-4 font-semibold py-2 md:py-3 w-full text-gray-400 hover:text-black border-box"
+                        >
+                            Область применения
+                        </button>
+                    </div>
+
+                    <div class="product-tab-content">111111111111</div>
+                    <div class="product-tab-content hidden">222222222222</div>
+                    <div class="product-tab-content hidden">333333333333</div>
+                    <div class="product-tab-content hidden">444444444444</div>
+                </div>
+
+                <div class="mb-6">
+                    <h2 class="uppercase text-xl py-1 mt-6 mb-4 border-b font-bold">Рекомендуемые товары</h2>
+
+                    <div class="relative">
+                        <button
+                            id="first-slider-prev"
+                            class="hover:bg-transparent hover:border-2 hover:border-light absolute top-1/2 z-[999] md:-ml-3 -mt-8 bg-light text-primary w-10 h-10 rounded-full flex items-center justify-center"
+                        >
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+
+                        <div id="product-first-slider">
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button
+                            id="first-slider-next"
+                            class="hover:bg-transparent hover:border-2 hover:border-light absolute top-1/2 z-[999] right-0 md:-mr-3 -mt-8 bg-light text-primary w-10 h-10 rounded-full flex items-center justify-center"
+                        >
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h2 class="uppercase text-xl py-1 mt-6 mb-4 border-b font-bold">Недавно просмотренные товары</h2>
+
+                    <div class="relative">
+                        <button
+                            id="second-slider-prev"
+                            class="hover:bg-transparent hover:border-2 hover:border-light absolute top-1/2 z-[999] md:-ml-3 -mt-8 bg-light text-primary w-10 h-10 rounded-full flex items-center justify-center"
+                        >
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+
+                        <div id="product-second-slider">
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button
+                            id="second-slider-next"
+                            class="hover:bg-transparent hover:border-2 hover:border-light absolute top-1/2 z-[999] right-0 md:-mr-3 -mt-8 bg-light text-primary w-10 h-10 rounded-full flex items-center justify-center"
+                        >
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h2 class="uppercase text-xl py-1 mt-6 mb-4 border-b font-bold">Похожие предложения</h2>
+
+                    <div class="relative">
+                        <button
+                            id="third-slider-prev"
+                            class="hover:bg-transparent hover:border-2 hover:border-light absolute top-1/2 z-[999] md:-ml-3 -mt-8 bg-light text-primary w-10 h-10 rounded-full flex items-center justify-center"
+                        >
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+
+                        <div id="product-third-slider">
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-64 mx-2 maxw-xs border rounded flex flex-col items-center">
+                                <a href="#" class="flex justify-center py-3">
+                                    <img src="../assets/images/product.jpg" alt="product" />
+                                </a>
+
+                                <div class="border-t py-6 px-4">
+                                    <a href="#" class="uppercase font-bold hover:underline">belinka base</a>
+
+                                    <p class="text-xs mt-3">
+                                        Высокоэффективная глубокопроникающая грунтовка-антисептик, обеспечивающая
+                                    </p>
+                                </div>
+
+                                <div class="bg-light h-10 flex justify-between items-center w-full pl-3">
+                                    <span>от 820р.</span>
+
+                                    <button class="bg-secondary hover:bg-primary text-white h-full px-4">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button
+                            id="third-slider-next"
+                            class="hover:bg-transparent hover:border-2 hover:border-light absolute top-1/2 z-[999] right-0 md:-mr-3 -mt-8 bg-light text-primary w-10 h-10 rounded-full flex items-center justify-center"
+                        >
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-light flex justify-center pt-6 pb-3">
+            <div class="d-flex flex flex-wrap justify-evenly gap-4 w-full max-w-6xl">
+                <div class="w-56 flex flex-col">
+                    <h4 class="font-bold mb-3 uppercase">навигация</h4>
+
+                    <ul class="flex flex-col gap-1 text-sm">
+                        <li>
+                            <a href="#" class="hover:underline">Каталог продукции</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Акции</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Личный кабинет</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Блог</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Карта сайта</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-56">
+                    <h4 class="font-bold mb-3 uppercase">каталог</h4>
+
+                    <ul class="flex flex-col gap-1 text-sm">
+                        <li>
+                            <a href="#" class="hover:underline">Лазурные деревозащитные покрытия</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Защитные грунтовки и пропитки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Масла для древесины</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Лаки для древесины</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Интерьерные краски</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Фасадные краски</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Эмали</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Герметики и шпатлевки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Монтажные пены</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Средства от плесени и грибка</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Штукатурка</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Защита Boritex</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Сувениры</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-56">
+                    <h4 class="font-bold mb-3 uppercase">о магазине</h4>
+
+                    <ul class="flex flex-col gap-1 text-sm">
+                        <li>
+                            <a href="#" class="hover:underline">Условия доставки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">О нас</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-56">
+                    <h4 class="font-bold mb-3 uppercase">о магазине</h4>
+
+                    <div class="flex gap-6">
+                        <a href="https://www.facebook.com/RuBelinka" target="_blank">
+                            <i class="fab fa-facebook text-fuchsia-800"></i>
+                        </a>
+                        <a href="https://vk.com/belinka_ru" target="_blank">
+                            <i class="fab fa-vk text-sky-700"></i>
+                        </a>
+                        <a href="https://ok.ru/group/57133759791143" target="_blank">
+                            <i class="fab fa-odnoklassniki text-lime-600"></i>
+                        </a>
+                        <a href="https://www.instagram.com/belinka_ru/" target="_blank">
+                            <i class="fab fa-instagram text-sky-700"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-3 w-56">
+                    <h4 class="font-bold uppercase">контакты</h4>
+
+                    <div class="flex flex-col gap-2 text-sm text-secondary">
+                        <a href="https://shop.belinka.ru/" class="hover:underline">ООО «Белинка-Рус»</a>
+
+                        <div class="flex gap-1">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+74952121217" class="hover:underline">+7 (495) 21-21-21-7</a>
+                        </div>
+
+                        <div class="flex gap-1">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:shop@belinka.ru" class="hover:underline">shop@belinka.ru </a>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <img src="../assets/images/visa.svg" alt="Visa" />
+                        <img src="../assets/images/apple-pay.svg" alt="Apple Pay" />
+                        <img src="../assets/images/gpay.svg" alt="Google Pay" />
+                        <img src="../assets/images/cbn.svg" alt="CBN" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/slick/slick.min.js"></script>
+        <script src="../js/tailwind-config.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
