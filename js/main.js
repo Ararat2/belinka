@@ -107,8 +107,8 @@ window.addEventListener("load", () => {
 
     const onProductTabChange = index => {
         productTabButtons[index].classList.add("text-black");
-        productTabButtons[index].classList.add("border-b-2");
-        productTabButtons[index].classList.add("border-secondary");
+        productTabButtons[index].classList.add("md:border-b-2");
+        productTabButtons[index].classList.add("md:border-secondary");
 
         productTabs[index].classList.remove("hidden");
 
@@ -116,8 +116,8 @@ window.addEventListener("load", () => {
             if (i === index) continue;
 
             productTabButtons[i].classList.remove("text-black");
-            productTabButtons[i].classList.remove("border-b-2");
-            productTabButtons[i].classList.remove("border-secondary");
+            productTabButtons[i].classList.remove("md:border-b-2");
+            productTabButtons[i].classList.remove("md:border-secondary");
 
             productTabs[i].classList.add("hidden");
         }
